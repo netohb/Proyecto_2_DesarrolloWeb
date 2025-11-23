@@ -5,4 +5,4 @@ Este repositorio es para trabajar en el segundo proyecto integrador de la materi
 ---
 
 ## 👥 Integrantes
-- **Ernesto Hernández**
+- **Ernesto Hernández Bernal**
