@@ -1,6 +1,7 @@
 from fastapi import APIRouter, HTTPException, Header
 from typing import Optional
 from pydantic import BaseModel
+from datetime import datetime
 from . import models
 
 
@@ -62,7 +63,7 @@ def create_post(
         "usuario_id": x_usuario_id,
         "texto": post_data.texto,
         "imagen_url": post_data.imagen_url,
-        "fecha_creacion": models.__import__("datetime").datetime.now().isoformat(),
+        "fecha_creacion": datetime.now().isoformat(),
         "likes": 0
     })
 
