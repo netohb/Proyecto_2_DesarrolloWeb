@@ -21,5 +21,4 @@ def get_spotify_new_releases(
             "albums": get_new_releases(limit)
         }
     except Exception as e:
-
         raise HTTPException(status_code=500, detail=str(e))
