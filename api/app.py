@@ -1,10 +1,16 @@
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 # Importar rutas
 from . import routes_posts
-
+from . import routes_spotify
 
 # --------------------------------------------------
 #              CREAR APP FASTAPI
@@ -48,7 +54,7 @@ def health_check():
 #                REGISTRO DE RUTAS
 # --------------------------------------------------
 app.include_router(routes_posts.router)
-
+app.include_router(routes_spotify.router)
 
 # --------------------------------------------------
 #                 EJECUCIÓN DIRECTA
