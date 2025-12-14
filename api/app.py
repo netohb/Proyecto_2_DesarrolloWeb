@@ -31,6 +31,8 @@ origins = [
     "http://127.0.0.1:5500",
     "http://127.0.0.1:5173",   # Vite
     "http://localhost:5173",   # Vite
+    "http://127.0.0.1:5174", #REACT
+    "http://localhost:5174", #REACT porque sin esto no me dejaba correr 
 ]
 
 app.add_middleware(
